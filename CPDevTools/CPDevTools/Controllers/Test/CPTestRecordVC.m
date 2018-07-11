@@ -38,6 +38,15 @@ UITableViewDataSource>
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Target-Actions
+- (IBAction)cleanBtnClick:(UIButton *)sender {
+    [[CPRecordMonitor sharedMonitor] cleanLocalData];
+    NSDictionary *recordVCDic = [CPRecordMonitor sharedMonitor].recordVCDic;
+    NSArray *akeys = [recordVCDic keysSortedByValueUsingSelector:@selector(compare:)];
+    self.dataList = [[akeys reverseObjectEnumerator] allObjects];
+    [self.tableView reloadData];
+}
+
 #pragma mark - UITableViewDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataList.count;

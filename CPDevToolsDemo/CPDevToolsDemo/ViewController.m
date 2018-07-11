@@ -10,7 +10,7 @@
 #import "KVOTest.h"
 #import <objc/runtime.h>
 
-#import <CPDevTools.h>
+#import <CPDevTools/CPDevTools.h>
 
 #import "AFNetworking.h"
 
@@ -48,12 +48,9 @@
         
     }];
     
-    //开启系统监控(需要在[window makeKeyAndVisible]后开启)
+    //开启系统监控
     [CPSystemMonitor start];
     
-    //NSArray *filterStrs = @[@"_UI",@"UI"];
-    //NSArray *classList = [self getClassListWithString:@"VC" filterList:filterStrs];
-    //NSLog(@"");
     
     //unrecognized selector test
     UIFont *font = [UIFont systemFontOfSize:12];
@@ -61,7 +58,6 @@
     if (((NSString *)font).length>0) {
         NSLog(@"aaaa");
     }
-    
     if ([((NSString *)font) isEqualToString:@"hh"]) {
         NSLog(@"bbbb");
     }
@@ -75,8 +71,6 @@
     
     
     //Network test
-    NSString *urlStr = [NSString stringWithFormat:@"http://api.map.baidu.com/geocoder/v2/?ak=XAI63yh37FD9M7GhruInLHa58nXUnyPT&location=%@,%@&output=json&pois=0",@(23),@(23)];
-    
     AFHTTPSessionManager *sessionTast = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
     sessionTast.responseSerializer = [AFHTTPResponseSerializer serializer];
     
@@ -93,73 +87,9 @@
     
     
     NSString *log = [CPLogMonitor sharedMonitor].realtimeLog;
-    
     NSLog(@"%@",log);
     
 }
-
-
-- (NSArray *)getClassListWithString:(NSString *)string filterList:(NSArray *)filterList {
-    
-    NSMutableArray *classList = [NSMutableArray array];
-    
-    unsigned int outCount;
-    Class *classes = objc_copyClassList(&outCount);
-    for (int i = 0; i < outCount; i++) {
-        
-        const char *className = class_getName(classes[i]);
-        NSString *classString = [NSString stringWithCString:className encoding:NSUTF8StringEncoding];
-        NSRange vcRange = [classString rangeOfString:string];
-        
-        if (vcRange.length && (vcRange.location + vcRange.length) == classString.length) {
-            BOOL isFilter = NO;
-            for (NSString *filter in filterList) {
-                if ([classString containsString:filter]) {
-                    isFilter = YES;
-                    break;
-                }
-            }
-            if (!isFilter) {
-                [classList addObject:classString];
-            }
-        }
-    }
-    free(classes);
-    
-    /*
-    int numClasses = 0, newNumClasses = objc_getClassList(NULL, 0);
-    Class *classes = NULL;
-    while (numClasses < newNumClasses) {
-        
-        numClasses = newNumClasses;
-        classes = (Class *)realloc(classes, sizeof(Class) * numClasses);
-        newNumClasses = objc_getClassList(classes, numClasses);
-        
-        for (int i = 0; i < numClasses; i++) {
-            
-            const char *className = class_getName(classes[i]);
-            NSString *classString = [NSString stringWithCString:className encoding:NSUTF8StringEncoding];
-            NSRange vcRange = [classString rangeOfString:string];
-            
-            if (vcRange.length && (vcRange.location + vcRange.length) == classString.length) {
-                BOOL isFilter = NO;
-                for (NSString *filter in filterList) {
-                    if ([classString containsString:filter]) {
-                        isFilter = YES;
-                        break;
-                    }
-                }
-                if (!isFilter) {
-                    [classList addObject:classString];
-                }
-            }
-        }
-    }
-    free(classes);
-     */
-    return [classList copy];
-}
-
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];

@@ -40,10 +40,7 @@
 #if 0
 + (NSArray <NSString *> *)regularURL {
     
-    return @[YSX_server_url,
-             YSX_kill_server_url,
-             @"http://116.204.15.166",
-             @"http://test.gamevideoshow.com"];
+    return @[];
 }
 
 + (NSString *)customHttpDecodingWithRequest:(NSData *)request

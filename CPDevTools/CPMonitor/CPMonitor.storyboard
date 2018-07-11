@@ -546,8 +546,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dh1-TA-YTn">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="na4-Xl-Xnl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="rIK-Ae-tn4"/>
+                                </constraints>
+                                <state key="normal" title="清空"/>
+                                <connections>
+                                    <action selector="cleanBtnClick:" destination="DmD-oV-TwU" eventType="touchUpInside" id="9YA-aX-zEA"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tfU-t7-N7M">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CPTestRecordCellID" rowHeight="59" id="Vvk-Du-5If">
@@ -593,9 +604,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Dh1-TA-YTn" firstAttribute="top" secondItem="tfU-t7-N7M" secondAttribute="bottom" id="14v-QM-lNP"/>
+                            <constraint firstItem="Dh1-TA-YTn" firstAttribute="leading" secondItem="UV2-NM-CGj" secondAttribute="leading" id="K5l-xP-sop"/>
+                            <constraint firstAttribute="trailing" secondItem="Dh1-TA-YTn" secondAttribute="trailing" id="Ksj-aj-Fbu"/>
                             <constraint firstAttribute="trailing" secondItem="tfU-t7-N7M" secondAttribute="trailing" id="U3p-0V-eHC"/>
+                            <constraint firstItem="Ucs-b2-6rj" firstAttribute="top" secondItem="Dh1-TA-YTn" secondAttribute="bottom" id="WkI-KX-2qV"/>
                             <constraint firstItem="tfU-t7-N7M" firstAttribute="top" secondItem="STv-q9-Z5o" secondAttribute="bottom" id="ceH-y9-PrD"/>
-                            <constraint firstItem="Ucs-b2-6rj" firstAttribute="top" secondItem="tfU-t7-N7M" secondAttribute="bottom" id="i5n-hE-8iK"/>
                             <constraint firstItem="tfU-t7-N7M" firstAttribute="leading" secondItem="UV2-NM-CGj" secondAttribute="leading" id="ycb-wv-Uie"/>
                         </constraints>
                     </view>
@@ -656,7 +670,7 @@
                             <constraint firstItem="EzX-7D-cRp" firstAttribute="leading" secondItem="zsU-93-QPs" secondAttribute="leading" id="Unh-9f-pF0"/>
                             <constraint firstItem="EzX-7D-cRp" firstAttribute="top" secondItem="vlB-qG-ttC" secondAttribute="bottom" id="f1L-dE-KvN"/>
                             <constraint firstAttribute="trailing" secondItem="EzX-7D-cRp" secondAttribute="trailing" id="gke-eC-bdR"/>
-                            <constraint firstItem="1wO-ob-N0T" firstAttribute="top" secondItem="EzX-7D-cRp" secondAttribute="bottom" id="mgS-Ae-Ub5"/>
+                            <constraint firstItem="1wO-ob-N0T" firstAttribute="top" secondItem="EzX-7D-cRp" secondAttribute="bottom" id="pwQ-fa-kCx"/>
                         </constraints>
                     </view>
                     <connections>

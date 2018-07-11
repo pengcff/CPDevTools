@@ -20,5 +20,6 @@ typedef void(^bFilter)(Class iclass,NSMutableArray *classList);
 
 - (void)startRecordViewControllerWithFilter:(bFilter)filter;
 
+- (void)cleanLocalData;
 
 @end

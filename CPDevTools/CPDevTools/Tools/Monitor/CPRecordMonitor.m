@@ -10,6 +10,8 @@
 #import "NSObject+CPSwizzle.h"
 #import <UIKit/UIKit.h>
 
+#define kPlistPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"CPRecordData.plist"]
+
 @implementation UIViewController (CPSwizzle)
 
 - (void)CP_viewDidAppear:(BOOL)animated {
@@ -20,6 +22,7 @@
             NSInteger count = [[CPRecordMonitor sharedMonitor].recordVCDic[class] integerValue];
             count ++;
             [[CPRecordMonitor sharedMonitor].recordVCDic setValue:@(count) forKey:class];
+            [[CPRecordMonitor sharedMonitor].recordVCDic writeToFile:kPlistPath atomically:YES];
         }
     }
     [self CP_viewDidAppear:animated];
@@ -56,9 +59,12 @@ static CPRecordMonitor *_sharedMonitor;
     }
     free(classes);
     
-    self.recordVCDic = @{}.mutableCopy;
-    for (NSString *className in classList) {
-        [self.recordVCDic setValue:@(0) forKey:className];
+    self.recordVCDic = [[NSMutableDictionary alloc] initWithContentsOfFile:kPlistPath];
+    if (!self.recordVCDic) {
+        self.recordVCDic = @{}.mutableCopy;
+        for (NSString *className in classList) {
+            [self.recordVCDic setValue:@(0) forKey:className];
+        }
     }
     
     [NSObject mothodSwizzleClass:@"UIViewController"
@@ -66,35 +72,13 @@ static CPRecordMonitor *_sharedMonitor;
                              new:@"CP_viewDidAppear:"];
 }
 
-/*
-- (NSArray *)getClassList {
+- (void)cleanLocalData {
     
-    NSMutableArray *classList = [NSMutableArray array];
-    
-    unsigned int outCount;
-    Class *classes = objc_copyClassList(&outCount);
-    for (int i = 0; i < outCount; i++) {
-        
-        const char *className = class_getName(classes[i]);
-        NSString *classString = [NSString stringWithCString:className encoding:NSUTF8StringEncoding];
-        NSRange vcRange = [classString rangeOfString:self.name];
-        if (vcRange.length && (vcRange.location + vcRange.length) == classString.length) {
-            BOOL isFilter = NO;
-            for (NSString *filter in self.filterList) {
-                if ([classString containsString:filter]) {
-                    isFilter = YES;
-                    break;
-                }
-            }
-            if (!isFilter) {
-                [classList addObject:classString];
-            }
-        }
+    NSMutableDictionary *tempDic = self.recordVCDic;
+    for (NSString *key in tempDic.allKeys) {
+        [self.recordVCDic setValue:@(0) forKey:key];
     }
-    free(classes);
-    
-    return [classList copy];
+    [self.recordVCDic writeToFile:kPlistPath atomically:YES];
 }
- */
 
 @end
