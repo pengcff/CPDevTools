@@ -21,8 +21,31 @@
 		0476A58F1F4A93F000A7F748 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5871F4A93F000A7F748 /* AFURLRequestSerialization.m */; };
 		0476A5901F4A93F000A7F748 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5891F4A93F000A7F748 /* AFURLResponseSerialization.m */; };
 		0476A5911F4A93F000A7F748 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A58B1F4A93F000A7F748 /* AFURLSessionManager.m */; };
-		B8E4616F20EDF32A003FFD6E /* CPMonitor.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E4616E20EDF32A003FFD6E /* CPMonitor.bundle */; };
-		B8E4619420EE03A6003FFD6E /* CPDevTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E4619320EE03A5003FFD6E /* CPDevTools.framework */; };
+		B861852D20F60AF60054C2A5 /* CPLogMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B86184F320F60AF60054C2A5 /* CPLogMonitor.m */; };
+		B861852E20F60AF60054C2A5 /* CPRecordMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B86184F520F60AF60054C2A5 /* CPRecordMonitor.m */; };
+		B861852F20F60AF60054C2A5 /* CPSystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B86184F820F60AF60054C2A5 /* CPSystemMonitor.m */; };
+		B861853020F60AF60054C2A5 /* CPNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B86184FB20F60AF60054C2A5 /* CPNetworkMonitor.m */; };
+		B861853120F60AF60054C2A5 /* CPCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B86184FD20F60AF60054C2A5 /* CPCrashMonitor.m */; };
+		B861853220F60AF60054C2A5 /* CPRunloopMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B86184FE20F60AF60054C2A5 /* CPRunloopMonitor.m */; };
+		B861853320F60AF60054C2A5 /* NSObject+CPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B861850120F60AF60054C2A5 /* NSObject+CPSwizzle.m */; };
+		B861853420F60AF60054C2A5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B861850420F60AF60054C2A5 /* LICENSE */; };
+		B861853520F60AF60054C2A5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = B861850520F60AF60054C2A5 /* fishhook.c */; };
+		B861853620F60AF60054C2A5 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B861850720F60AF60054C2A5 /* BSBacktraceLogger.m */; };
+		B861853720F60AF60054C2A5 /* CPSafeSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = B861850B20F60AF60054C2A5 /* CPSafeSelector.m */; };
+		B861853820F60AF60054C2A5 /* CPSafeKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = B861850C20F60AF60054C2A5 /* CPSafeKVO.m */; };
+		B861853920F60AF60054C2A5 /* CPTestRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861851120F60AF60054C2A5 /* CPTestRecordVC.m */; };
+		B861853A20F60AF60054C2A5 /* CPCrashInfoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861851620F60AF60054C2A5 /* CPCrashInfoListVC.m */; };
+		B861853B20F60AF60054C2A5 /* CPCrashGuardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861851720F60AF60054C2A5 /* CPCrashGuardVC.m */; };
+		B861853C20F60AF60054C2A5 /* CPCrashInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861851920F60AF60054C2A5 /* CPCrashInfoVC.m */; };
+		B861853D20F60AF60054C2A5 /* CPHttpInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861851B20F60AF60054C2A5 /* CPHttpInfoVC.m */; };
+		B861853E20F60AF60054C2A5 /* CPHttpInfoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861851C20F60AF60054C2A5 /* CPHttpInfoListVC.m */; };
+		B861853F20F60AF60054C2A5 /* CPMonitorRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861852120F60AF60054C2A5 /* CPMonitorRootVC.m */; };
+		B861854020F60AF60054C2A5 /* CPLogFileInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861852520F60AF60054C2A5 /* CPLogFileInfoVC.m */; };
+		B861854120F60AF60054C2A5 /* CPLogFileListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861852620F60AF60054C2A5 /* CPLogFileListVC.m */; };
+		B861854220F60AF60054C2A5 /* CPPerformanceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861852A20F60AF60054C2A5 /* CPPerformanceListVC.m */; };
+		B861854320F60AF60054C2A5 /* CPPerformanceInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B861852B20F60AF60054C2A5 /* CPPerformanceInfoVC.m */; };
+		B861854820F60B0E0054C2A5 /* CPMonitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B861854620F60B0E0054C2A5 /* CPMonitor.storyboard */; };
+		B861854920F60B0E0054C2A5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B861854720F60B0E0054C2A5 /* Info.plist */; };
 		B8ED06FB1F68346A00E07845 /* YSXBase64String.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED06F91F68346A00E07845 /* YSXBase64String.m */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +77,55 @@
 		0476A5891F4A93F000A7F748 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		0476A58A1F4A93F000A7F748 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		0476A58B1F4A93F000A7F748 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		B8E4616E20EDF32A003FFD6E /* CPMonitor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CPMonitor.bundle; sourceTree = "<group>"; };
-		B8E4619320EE03A5003FFD6E /* CPDevTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CPDevTools.framework; sourceTree = "<group>"; };
+		B86184F320F60AF60054C2A5 /* CPLogMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLogMonitor.m; sourceTree = "<group>"; };
+		B86184F420F60AF60054C2A5 /* CPNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPNetworkMonitor.h; sourceTree = "<group>"; };
+		B86184F520F60AF60054C2A5 /* CPRecordMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRecordMonitor.m; sourceTree = "<group>"; };
+		B86184F620F60AF60054C2A5 /* CPRunloopMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRunloopMonitor.h; sourceTree = "<group>"; };
+		B86184F720F60AF60054C2A5 /* CPCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashMonitor.h; sourceTree = "<group>"; };
+		B86184F820F60AF60054C2A5 /* CPSystemMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSystemMonitor.m; sourceTree = "<group>"; };
+		B86184F920F60AF60054C2A5 /* CPLogMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogMonitor.h; sourceTree = "<group>"; };
+		B86184FA20F60AF60054C2A5 /* CPRecordMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRecordMonitor.h; sourceTree = "<group>"; };
+		B86184FB20F60AF60054C2A5 /* CPNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNetworkMonitor.m; sourceTree = "<group>"; };
+		B86184FC20F60AF60054C2A5 /* CPSystemMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSystemMonitor.h; sourceTree = "<group>"; };
+		B86184FD20F60AF60054C2A5 /* CPCrashMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashMonitor.m; sourceTree = "<group>"; };
+		B86184FE20F60AF60054C2A5 /* CPRunloopMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRunloopMonitor.m; sourceTree = "<group>"; };
+		B861850020F60AF60054C2A5 /* CPDeveToolsDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDeveToolsDefine.h; sourceTree = "<group>"; };
+		B861850120F60AF60054C2A5 /* NSObject+CPSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CPSwizzle.m"; sourceTree = "<group>"; };
+		B861850220F60AF60054C2A5 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		B861850420F60AF60054C2A5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B861850520F60AF60054C2A5 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		B861850620F60AF60054C2A5 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		B861850720F60AF60054C2A5 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		B861850820F60AF60054C2A5 /* NSObject+CPSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CPSwizzle.h"; sourceTree = "<group>"; };
+		B861850A20F60AF60054C2A5 /* CPSafeKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSafeKVO.h; sourceTree = "<group>"; };
+		B861850B20F60AF60054C2A5 /* CPSafeSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSafeSelector.m; sourceTree = "<group>"; };
+		B861850C20F60AF60054C2A5 /* CPSafeKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSafeKVO.m; sourceTree = "<group>"; };
+		B861850D20F60AF60054C2A5 /* CPSafeSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSafeSelector.h; sourceTree = "<group>"; };
+		B861850E20F60AF60054C2A5 /* CPDevTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDevTools.h; sourceTree = "<group>"; };
+		B861851120F60AF60054C2A5 /* CPTestRecordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTestRecordVC.m; sourceTree = "<group>"; };
+		B861851220F60AF60054C2A5 /* CPTestRecordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTestRecordVC.h; sourceTree = "<group>"; };
+		B861851420F60AF60054C2A5 /* CPCrashGuardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashGuardVC.h; sourceTree = "<group>"; };
+		B861851520F60AF60054C2A5 /* CPCrashInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashInfoVC.h; sourceTree = "<group>"; };
+		B861851620F60AF60054C2A5 /* CPCrashInfoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashInfoListVC.m; sourceTree = "<group>"; };
+		B861851720F60AF60054C2A5 /* CPCrashGuardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashGuardVC.m; sourceTree = "<group>"; };
+		B861851820F60AF60054C2A5 /* CPCrashInfoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashInfoListVC.h; sourceTree = "<group>"; };
+		B861851920F60AF60054C2A5 /* CPCrashInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashInfoVC.m; sourceTree = "<group>"; };
+		B861851B20F60AF60054C2A5 /* CPHttpInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPHttpInfoVC.m; sourceTree = "<group>"; };
+		B861851C20F60AF60054C2A5 /* CPHttpInfoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPHttpInfoListVC.m; sourceTree = "<group>"; };
+		B861851D20F60AF60054C2A5 /* CPHttpInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHttpInfoVC.h; sourceTree = "<group>"; };
+		B861851E20F60AF60054C2A5 /* CPHttpInfoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHttpInfoListVC.h; sourceTree = "<group>"; };
+		B861852020F60AF60054C2A5 /* CPMonitorRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMonitorRootVC.h; sourceTree = "<group>"; };
+		B861852120F60AF60054C2A5 /* CPMonitorRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMonitorRootVC.m; sourceTree = "<group>"; };
+		B861852320F60AF60054C2A5 /* CPLogFileInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogFileInfoVC.h; sourceTree = "<group>"; };
+		B861852420F60AF60054C2A5 /* CPLogFileListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogFileListVC.h; sourceTree = "<group>"; };
+		B861852520F60AF60054C2A5 /* CPLogFileInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLogFileInfoVC.m; sourceTree = "<group>"; };
+		B861852620F60AF60054C2A5 /* CPLogFileListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLogFileListVC.m; sourceTree = "<group>"; };
+		B861852820F60AF60054C2A5 /* CPPerformanceListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPerformanceListVC.h; sourceTree = "<group>"; };
+		B861852920F60AF60054C2A5 /* CPPerformanceInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPerformanceInfoVC.h; sourceTree = "<group>"; };
+		B861852A20F60AF60054C2A5 /* CPPerformanceListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPerformanceListVC.m; sourceTree = "<group>"; };
+		B861852B20F60AF60054C2A5 /* CPPerformanceInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPerformanceInfoVC.m; sourceTree = "<group>"; };
+		B861854620F60B0E0054C2A5 /* CPMonitor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CPMonitor.storyboard; sourceTree = "<group>"; };
+		B861854720F60B0E0054C2A5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8ED06F91F68346A00E07845 /* YSXBase64String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSXBase64String.m; sourceTree = "<group>"; };
 		B8ED06FA1F68346A00E07845 /* YSXBase64String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSXBase64String.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +135,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E4619420EE03A6003FFD6E /* CPDevTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +212,179 @@
 		0476A5F71F4ACC6200A7F748 /* CPDevTools */ = {
 			isa = PBXGroup;
 			children = (
-				B8E4619320EE03A5003FFD6E /* CPDevTools.framework */,
-				B8E4616E20EDF32A003FFD6E /* CPMonitor.bundle */,
+				B86184EF20F60AF60054C2A5 /* CPDevTools */,
+				B861854520F60B0E0054C2A5 /* CPMonitor */,
 			);
 			path = CPDevTools;
+			sourceTree = "<group>";
+		};
+		B86184EF20F60AF60054C2A5 /* CPDevTools */ = {
+			isa = PBXGroup;
+			children = (
+				B861850E20F60AF60054C2A5 /* CPDevTools.h */,
+				B86184F120F60AF60054C2A5 /* Tools */,
+				B861850F20F60AF60054C2A5 /* Controllers */,
+				B86184F020F60AF60054C2A5 /* UI */,
+			);
+			name = CPDevTools;
+			path = ../../../CPDevTools/CPDevTools;
+			sourceTree = "<group>";
+		};
+		B86184F020F60AF60054C2A5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B86184F120F60AF60054C2A5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B86184F220F60AF60054C2A5 /* Monitor */,
+				B86184FF20F60AF60054C2A5 /* Others */,
+				B861850920F60AF60054C2A5 /* Guard */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B86184F220F60AF60054C2A5 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				B86184FC20F60AF60054C2A5 /* CPSystemMonitor.h */,
+				B86184F820F60AF60054C2A5 /* CPSystemMonitor.m */,
+				B86184F920F60AF60054C2A5 /* CPLogMonitor.h */,
+				B86184F320F60AF60054C2A5 /* CPLogMonitor.m */,
+				B86184F420F60AF60054C2A5 /* CPNetworkMonitor.h */,
+				B86184FB20F60AF60054C2A5 /* CPNetworkMonitor.m */,
+				B86184F620F60AF60054C2A5 /* CPRunloopMonitor.h */,
+				B86184FE20F60AF60054C2A5 /* CPRunloopMonitor.m */,
+				B86184F720F60AF60054C2A5 /* CPCrashMonitor.h */,
+				B86184FD20F60AF60054C2A5 /* CPCrashMonitor.m */,
+				B86184FA20F60AF60054C2A5 /* CPRecordMonitor.h */,
+				B86184F520F60AF60054C2A5 /* CPRecordMonitor.m */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		B86184FF20F60AF60054C2A5 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B861850020F60AF60054C2A5 /* CPDeveToolsDefine.h */,
+				B861850120F60AF60054C2A5 /* NSObject+CPSwizzle.m */,
+				B861850220F60AF60054C2A5 /* BSBacktraceLogger.h */,
+				B861850320F60AF60054C2A5 /* fishhook */,
+				B861850720F60AF60054C2A5 /* BSBacktraceLogger.m */,
+				B861850820F60AF60054C2A5 /* NSObject+CPSwizzle.h */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B861850320F60AF60054C2A5 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				B861850420F60AF60054C2A5 /* LICENSE */,
+				B861850520F60AF60054C2A5 /* fishhook.c */,
+				B861850620F60AF60054C2A5 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		B861850920F60AF60054C2A5 /* Guard */ = {
+			isa = PBXGroup;
+			children = (
+				B861850A20F60AF60054C2A5 /* CPSafeKVO.h */,
+				B861850B20F60AF60054C2A5 /* CPSafeSelector.m */,
+				B861850C20F60AF60054C2A5 /* CPSafeKVO.m */,
+				B861850D20F60AF60054C2A5 /* CPSafeSelector.h */,
+			);
+			path = Guard;
+			sourceTree = "<group>";
+		};
+		B861850F20F60AF60054C2A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B861851020F60AF60054C2A5 /* Test */,
+				B861851320F60AF60054C2A5 /* Crash */,
+				B861851A20F60AF60054C2A5 /* Http */,
+				B861851F20F60AF60054C2A5 /* Root */,
+				B861852220F60AF60054C2A5 /* Log */,
+				B861852720F60AF60054C2A5 /* Performance */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B861851020F60AF60054C2A5 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B861851120F60AF60054C2A5 /* CPTestRecordVC.m */,
+				B861851220F60AF60054C2A5 /* CPTestRecordVC.h */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B861851320F60AF60054C2A5 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				B861851420F60AF60054C2A5 /* CPCrashGuardVC.h */,
+				B861851520F60AF60054C2A5 /* CPCrashInfoVC.h */,
+				B861851620F60AF60054C2A5 /* CPCrashInfoListVC.m */,
+				B861851720F60AF60054C2A5 /* CPCrashGuardVC.m */,
+				B861851820F60AF60054C2A5 /* CPCrashInfoListVC.h */,
+				B861851920F60AF60054C2A5 /* CPCrashInfoVC.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		B861851A20F60AF60054C2A5 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				B861851B20F60AF60054C2A5 /* CPHttpInfoVC.m */,
+				B861851C20F60AF60054C2A5 /* CPHttpInfoListVC.m */,
+				B861851D20F60AF60054C2A5 /* CPHttpInfoVC.h */,
+				B861851E20F60AF60054C2A5 /* CPHttpInfoListVC.h */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		B861851F20F60AF60054C2A5 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B861852020F60AF60054C2A5 /* CPMonitorRootVC.h */,
+				B861852120F60AF60054C2A5 /* CPMonitorRootVC.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B861852220F60AF60054C2A5 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				B861852320F60AF60054C2A5 /* CPLogFileInfoVC.h */,
+				B861852420F60AF60054C2A5 /* CPLogFileListVC.h */,
+				B861852520F60AF60054C2A5 /* CPLogFileInfoVC.m */,
+				B861852620F60AF60054C2A5 /* CPLogFileListVC.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		B861852720F60AF60054C2A5 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				B861852820F60AF60054C2A5 /* CPPerformanceListVC.h */,
+				B861852920F60AF60054C2A5 /* CPPerformanceInfoVC.h */,
+				B861852A20F60AF60054C2A5 /* CPPerformanceListVC.m */,
+				B861852B20F60AF60054C2A5 /* CPPerformanceInfoVC.m */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		B861854520F60B0E0054C2A5 /* CPMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				B861854620F60B0E0054C2A5 /* CPMonitor.storyboard */,
+				B861854720F60B0E0054C2A5 /* Info.plist */,
+			);
+			name = CPMonitor;
+			path = ../../../CPDevTools/CPMonitor;
 			sourceTree = "<group>";
 		};
 		B8E4617620EDF468003FFD6E /* Frameworks */ = {
@@ -224,10 +462,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B861854820F60B0E0054C2A5 /* CPMonitor.storyboard in Resources */,
 				0476A56E1F4A93B900A7F748 /* LaunchScreen.storyboard in Resources */,
 				0476A56B1F4A93B900A7F748 /* Assets.xcassets in Resources */,
+				B861853420F60AF60054C2A5 /* LICENSE in Resources */,
 				0476A5691F4A93B900A7F748 /* Main.storyboard in Resources */,
-				B8E4616F20EDF32A003FFD6E /* CPMonitor.bundle in Resources */,
+				B861854920F60B0E0054C2A5 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,17 +479,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8ED06FB1F68346A00E07845 /* YSXBase64String.m in Sources */,
+				B861853D20F60AF60054C2A5 /* CPHttpInfoVC.m in Sources */,
 				0476A58F1F4A93F000A7F748 /* AFURLRequestSerialization.m in Sources */,
+				B861854020F60AF60054C2A5 /* CPLogFileInfoVC.m in Sources */,
+				B861853020F60AF60054C2A5 /* CPNetworkMonitor.m in Sources */,
+				B861852D20F60AF60054C2A5 /* CPLogMonitor.m in Sources */,
 				0476A57C1F4A93E100A7F748 /* KVOTest.m in Sources */,
+				B861852F20F60AF60054C2A5 /* CPSystemMonitor.m in Sources */,
+				B861853920F60AF60054C2A5 /* CPTestRecordVC.m in Sources */,
+				B861854220F60AF60054C2A5 /* CPPerformanceListVC.m in Sources */,
+				B861854320F60AF60054C2A5 /* CPPerformanceInfoVC.m in Sources */,
+				B861853E20F60AF60054C2A5 /* CPHttpInfoListVC.m in Sources */,
+				B861853520F60AF60054C2A5 /* fishhook.c in Sources */,
 				0476A57B1F4A93E100A7F748 /* DSKHttpDecoding.m in Sources */,
 				0476A5631F4A93B900A7F748 /* AppDelegate.m in Sources */,
+				B861853F20F60AF60054C2A5 /* CPMonitorRootVC.m in Sources */,
+				B861853620F60AF60054C2A5 /* BSBacktraceLogger.m in Sources */,
+				B861853720F60AF60054C2A5 /* CPSafeSelector.m in Sources */,
+				B861853120F60AF60054C2A5 /* CPCrashMonitor.m in Sources */,
+				B861852E20F60AF60054C2A5 /* CPRecordMonitor.m in Sources */,
 				0476A5911F4A93F000A7F748 /* AFURLSessionManager.m in Sources */,
+				B861853820F60AF60054C2A5 /* CPSafeKVO.m in Sources */,
 				0476A5901F4A93F000A7F748 /* AFURLResponseSerialization.m in Sources */,
 				0476A58D1F4A93F000A7F748 /* AFNetworkReachabilityManager.m in Sources */,
+				B861854120F60AF60054C2A5 /* CPLogFileListVC.m in Sources */,
+				B861853C20F60AF60054C2A5 /* CPCrashInfoVC.m in Sources */,
+				B861853220F60AF60054C2A5 /* CPRunloopMonitor.m in Sources */,
 				0476A58E1F4A93F000A7F748 /* AFSecurityPolicy.m in Sources */,
 				0476A58C1F4A93F000A7F748 /* AFHTTPSessionManager.m in Sources */,
 				0476A5601F4A93B900A7F748 /* main.m in Sources */,
+				B861853A20F60AF60054C2A5 /* CPCrashInfoListVC.m in Sources */,
+				B861853320F60AF60054C2A5 /* NSObject+CPSwizzle.m in Sources */,
 				0476A57D1F4A93E100A7F748 /* ViewController.m in Sources */,
+				B861853B20F60AF60054C2A5 /* CPCrashGuardVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

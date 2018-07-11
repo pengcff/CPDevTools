@@ -6,7 +6,7 @@
 //  Copyright © 2017年 mac. All rights reserved.
 //
 
-#import <CPDevTools/CPDevTools.h>
+#import "CPDevTools.h"
 
 @interface DSKHttpDecoding : CPHttpDecoding
 

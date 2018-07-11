@@ -10,7 +10,7 @@
 #import "KVOTest.h"
 #import <objc/runtime.h>
 
-#import <CPDevTools/CPDevTools.h>
+#import "CPDevTools.h"
 
 #import "AFNetworking.h"
 
@@ -44,8 +44,14 @@
     //开启unrecognized selector奔溃保护
     [[CPCrashMonitor sharedMonitor] isEnableGuardSelector:YES];
     
+    //开启界面使用记录
     [[CPRecordMonitor sharedMonitor] startRecordViewControllerWithFilter:^(__unsafe_unretained Class iclass, NSMutableArray *classList) {
-        
+        const char *className = class_getName(iclass);
+        NSString *classString = [NSString stringWithCString:className encoding:NSUTF8StringEncoding];
+        if (class_getSuperclass(iclass) == NSClassFromString(@"UIViewController")
+            &&[classString containsString:@"CP"]) {
+            [classList addObject:classString];
+        }
     }];
     
     //开启系统监控

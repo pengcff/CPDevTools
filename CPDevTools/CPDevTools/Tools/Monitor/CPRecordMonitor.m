@@ -60,7 +60,7 @@ static CPRecordMonitor *_sharedMonitor;
     free(classes);
     
     self.recordVCDic = [[NSMutableDictionary alloc] initWithContentsOfFile:kPlistPath];
-    if (!self.recordVCDic) {
+    if (!self.recordVCDic || !self.recordVCDic.count) {
         self.recordVCDic = @{}.mutableCopy;
         for (NSString *className in classList) {
             [self.recordVCDic setValue:@(0) forKey:className];
@@ -74,10 +74,7 @@ static CPRecordMonitor *_sharedMonitor;
 
 - (void)cleanLocalData {
     
-    NSMutableDictionary *tempDic = self.recordVCDic;
-    for (NSString *key in tempDic.allKeys) {
-        [self.recordVCDic setValue:@(0) forKey:key];
-    }
+    self.recordVCDic = @{}.mutableCopy;
     [self.recordVCDic writeToFile:kPlistPath atomically:YES];
 }
 
