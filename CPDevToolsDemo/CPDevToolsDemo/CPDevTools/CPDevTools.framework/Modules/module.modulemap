@@ -1,0 +1,6 @@
+framework module CPDevTools {
+  umbrella header "CPDevTools.h"
+
+  export *
+  module * { export * }
+}

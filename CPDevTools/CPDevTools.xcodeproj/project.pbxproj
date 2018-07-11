@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042FB4051F8DD0A60018C25B /* CPCrashGuardVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 042FB4031F8DD0A60018C25B /* CPCrashGuardVC.h */; };
+		042FB4061F8DD0A60018C25B /* CPCrashGuardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 042FB4041F8DD0A60018C25B /* CPCrashGuardVC.m */; };
+		042FB40B1F8DF29E0018C25B /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 042FB4081F8DF29E0018C25B /* fishhook.c */; };
+		042FB40C1F8DF29E0018C25B /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 042FB4091F8DF29E0018C25B /* fishhook.h */; };
+		042FB40D1F8DF29E0018C25B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 042FB40A1F8DF29E0018C25B /* LICENSE */; };
+		0476A4F71F4A92DF00A7F748 /* CPDevTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A4F51F4A92DF00A7F748 /* CPDevTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0476A52D1F4A92F800A7F748 /* CPCrashInfoListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A4FF1F4A92F800A7F748 /* CPCrashInfoListVC.h */; };
+		0476A52E1F4A92F800A7F748 /* CPCrashInfoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5001F4A92F800A7F748 /* CPCrashInfoListVC.m */; };
+		0476A52F1F4A92F800A7F748 /* CPCrashInfoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5011F4A92F800A7F748 /* CPCrashInfoVC.h */; };
+		0476A5301F4A92F800A7F748 /* CPCrashInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5021F4A92F800A7F748 /* CPCrashInfoVC.m */; };
+		0476A5311F4A92F800A7F748 /* CPHttpInfoListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5041F4A92F800A7F748 /* CPHttpInfoListVC.h */; };
+		0476A5321F4A92F800A7F748 /* CPHttpInfoListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5051F4A92F800A7F748 /* CPHttpInfoListVC.m */; };
+		0476A5331F4A92F800A7F748 /* CPHttpInfoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5061F4A92F800A7F748 /* CPHttpInfoVC.h */; };
+		0476A5341F4A92F800A7F748 /* CPHttpInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5071F4A92F800A7F748 /* CPHttpInfoVC.m */; };
+		0476A5351F4A92F800A7F748 /* CPLogFileInfoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5091F4A92F800A7F748 /* CPLogFileInfoVC.h */; };
+		0476A5361F4A92F800A7F748 /* CPLogFileInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A50A1F4A92F800A7F748 /* CPLogFileInfoVC.m */; };
+		0476A5371F4A92F800A7F748 /* CPLogFileListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A50B1F4A92F800A7F748 /* CPLogFileListVC.h */; };
+		0476A5381F4A92F800A7F748 /* CPLogFileListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A50C1F4A92F800A7F748 /* CPLogFileListVC.m */; };
+		0476A5391F4A92F800A7F748 /* CPPerformanceInfoVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A50E1F4A92F800A7F748 /* CPPerformanceInfoVC.h */; };
+		0476A53A1F4A92F800A7F748 /* CPPerformanceInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A50F1F4A92F800A7F748 /* CPPerformanceInfoVC.m */; };
+		0476A53B1F4A92F800A7F748 /* CPPerformanceListVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5101F4A92F800A7F748 /* CPPerformanceListVC.h */; };
+		0476A53C1F4A92F800A7F748 /* CPPerformanceListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5111F4A92F800A7F748 /* CPPerformanceListVC.m */; };
+		0476A53D1F4A92F800A7F748 /* CPMonitorRootVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5131F4A92F800A7F748 /* CPMonitorRootVC.h */; };
+		0476A53E1F4A92F800A7F748 /* CPMonitorRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5141F4A92F800A7F748 /* CPMonitorRootVC.m */; };
+		0476A53F1F4A92F800A7F748 /* CPSafeKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5171F4A92F800A7F748 /* CPSafeKVO.h */; };
+		0476A5401F4A92F800A7F748 /* CPSafeKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5181F4A92F800A7F748 /* CPSafeKVO.m */; };
+		0476A5411F4A92F800A7F748 /* CPSafeSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5191F4A92F800A7F748 /* CPSafeSelector.h */; };
+		0476A5421F4A92F800A7F748 /* CPSafeSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A51A1F4A92F800A7F748 /* CPSafeSelector.m */; };
+		0476A5431F4A92F800A7F748 /* CPCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A51C1F4A92F800A7F748 /* CPCrashMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0476A5441F4A92F800A7F748 /* CPCrashMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A51D1F4A92F800A7F748 /* CPCrashMonitor.m */; };
+		0476A5451F4A92F800A7F748 /* CPLogMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A51E1F4A92F800A7F748 /* CPLogMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0476A5461F4A92F800A7F748 /* CPLogMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A51F1F4A92F800A7F748 /* CPLogMonitor.m */; };
+		0476A5471F4A92F800A7F748 /* CPNetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5201F4A92F800A7F748 /* CPNetworkMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0476A5481F4A92F800A7F748 /* CPNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5211F4A92F800A7F748 /* CPNetworkMonitor.m */; };
+		0476A5491F4A92F800A7F748 /* CPRunloopMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5221F4A92F800A7F748 /* CPRunloopMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0476A54A1F4A92F800A7F748 /* CPRunloopMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5231F4A92F800A7F748 /* CPRunloopMonitor.m */; };
+		0476A54B1F4A92F800A7F748 /* CPSystemMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5241F4A92F800A7F748 /* CPSystemMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0476A54C1F4A92F800A7F748 /* CPSystemMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5251F4A92F800A7F748 /* CPSystemMonitor.m */; };
+		0476A54D1F4A92F800A7F748 /* BSBacktraceLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5271F4A92F800A7F748 /* BSBacktraceLogger.h */; };
+		0476A54E1F4A92F800A7F748 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A5281F4A92F800A7F748 /* BSBacktraceLogger.m */; };
+		0476A54F1F4A92F800A7F748 /* NSObject+CPSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 0476A5291F4A92F800A7F748 /* NSObject+CPSwizzle.h */; };
+		0476A5501F4A92F800A7F748 /* NSObject+CPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476A52A1F4A92F800A7F748 /* NSObject+CPSwizzle.m */; };
+		0476A5E71F4AC61400A7F748 /* CPMonitor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0476A5E61F4AC61400A7F748 /* CPMonitor.storyboard */; };
+		B8E4615E20EDB6E5003FFD6E /* CPTestRecordVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E4615C20EDB6E5003FFD6E /* CPTestRecordVC.h */; };
+		B8E4615F20EDB6E5003FFD6E /* CPTestRecordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E4615D20EDB6E5003FFD6E /* CPTestRecordVC.m */; };
+		B8E4616620EDB84F003FFD6E /* CPRecordMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E4616420EDB84F003FFD6E /* CPRecordMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8E4616720EDB84F003FFD6E /* CPRecordMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E4616520EDB84F003FFD6E /* CPRecordMonitor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		042FB4031F8DD0A60018C25B /* CPCrashGuardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashGuardVC.h; sourceTree = "<group>"; };
+		042FB4041F8DD0A60018C25B /* CPCrashGuardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashGuardVC.m; sourceTree = "<group>"; };
+		042FB4081F8DF29E0018C25B /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		042FB4091F8DF29E0018C25B /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		042FB40A1F8DF29E0018C25B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0476A4F21F4A92DF00A7F748 /* CPDevTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CPDevTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0476A4F51F4A92DF00A7F748 /* CPDevTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDevTools.h; sourceTree = "<group>"; };
+		0476A4F61F4A92DF00A7F748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0476A4FF1F4A92F800A7F748 /* CPCrashInfoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashInfoListVC.h; sourceTree = "<group>"; };
+		0476A5001F4A92F800A7F748 /* CPCrashInfoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashInfoListVC.m; sourceTree = "<group>"; };
+		0476A5011F4A92F800A7F748 /* CPCrashInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashInfoVC.h; sourceTree = "<group>"; };
+		0476A5021F4A92F800A7F748 /* CPCrashInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashInfoVC.m; sourceTree = "<group>"; };
+		0476A5041F4A92F800A7F748 /* CPHttpInfoListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHttpInfoListVC.h; sourceTree = "<group>"; };
+		0476A5051F4A92F800A7F748 /* CPHttpInfoListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPHttpInfoListVC.m; sourceTree = "<group>"; };
+		0476A5061F4A92F800A7F748 /* CPHttpInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHttpInfoVC.h; sourceTree = "<group>"; };
+		0476A5071F4A92F800A7F748 /* CPHttpInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPHttpInfoVC.m; sourceTree = "<group>"; };
+		0476A5091F4A92F800A7F748 /* CPLogFileInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogFileInfoVC.h; sourceTree = "<group>"; };
+		0476A50A1F4A92F800A7F748 /* CPLogFileInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLogFileInfoVC.m; sourceTree = "<group>"; };
+		0476A50B1F4A92F800A7F748 /* CPLogFileListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogFileListVC.h; sourceTree = "<group>"; };
+		0476A50C1F4A92F800A7F748 /* CPLogFileListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLogFileListVC.m; sourceTree = "<group>"; };
+		0476A50E1F4A92F800A7F748 /* CPPerformanceInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPerformanceInfoVC.h; sourceTree = "<group>"; };
+		0476A50F1F4A92F800A7F748 /* CPPerformanceInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPerformanceInfoVC.m; sourceTree = "<group>"; };
+		0476A5101F4A92F800A7F748 /* CPPerformanceListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPerformanceListVC.h; sourceTree = "<group>"; };
+		0476A5111F4A92F800A7F748 /* CPPerformanceListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPerformanceListVC.m; sourceTree = "<group>"; };
+		0476A5131F4A92F800A7F748 /* CPMonitorRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMonitorRootVC.h; sourceTree = "<group>"; };
+		0476A5141F4A92F800A7F748 /* CPMonitorRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMonitorRootVC.m; sourceTree = "<group>"; };
+		0476A5171F4A92F800A7F748 /* CPSafeKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSafeKVO.h; sourceTree = "<group>"; };
+		0476A5181F4A92F800A7F748 /* CPSafeKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSafeKVO.m; sourceTree = "<group>"; };
+		0476A5191F4A92F800A7F748 /* CPSafeSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSafeSelector.h; sourceTree = "<group>"; };
+		0476A51A1F4A92F800A7F748 /* CPSafeSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSafeSelector.m; sourceTree = "<group>"; };
+		0476A51C1F4A92F800A7F748 /* CPCrashMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCrashMonitor.h; sourceTree = "<group>"; };
+		0476A51D1F4A92F800A7F748 /* CPCrashMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCrashMonitor.m; sourceTree = "<group>"; };
+		0476A51E1F4A92F800A7F748 /* CPLogMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLogMonitor.h; sourceTree = "<group>"; };
+		0476A51F1F4A92F800A7F748 /* CPLogMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLogMonitor.m; sourceTree = "<group>"; };
+		0476A5201F4A92F800A7F748 /* CPNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPNetworkMonitor.h; sourceTree = "<group>"; };
+		0476A5211F4A92F800A7F748 /* CPNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNetworkMonitor.m; sourceTree = "<group>"; };
+		0476A5221F4A92F800A7F748 /* CPRunloopMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRunloopMonitor.h; sourceTree = "<group>"; };
+		0476A5231F4A92F800A7F748 /* CPRunloopMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRunloopMonitor.m; sourceTree = "<group>"; };
+		0476A5241F4A92F800A7F748 /* CPSystemMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSystemMonitor.h; sourceTree = "<group>"; };
+		0476A5251F4A92F800A7F748 /* CPSystemMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSystemMonitor.m; sourceTree = "<group>"; };
+		0476A5271F4A92F800A7F748 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		0476A5281F4A92F800A7F748 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		0476A5291F4A92F800A7F748 /* NSObject+CPSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CPSwizzle.h"; sourceTree = "<group>"; };
+		0476A52A1F4A92F800A7F748 /* NSObject+CPSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CPSwizzle.m"; sourceTree = "<group>"; };
+		0476A5A41F4AB51100A7F748 /* CPDeveToolsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDeveToolsDefine.h; sourceTree = "<group>"; };
+		0476A5E01F4AC5D200A7F748 /* CPMonitor.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPMonitor.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0476A5E21F4AC5D200A7F748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0476A5E61F4AC61400A7F748 /* CPMonitor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CPMonitor.storyboard; sourceTree = "<group>"; };
+		B8E4615C20EDB6E5003FFD6E /* CPTestRecordVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPTestRecordVC.h; sourceTree = "<group>"; };
+		B8E4615D20EDB6E5003FFD6E /* CPTestRecordVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPTestRecordVC.m; sourceTree = "<group>"; };
+		B8E4616420EDB84F003FFD6E /* CPRecordMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPRecordMonitor.h; sourceTree = "<group>"; };
+		B8E4616520EDB84F003FFD6E /* CPRecordMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPRecordMonitor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0476A4EE1F4A92DF00A7F748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0476A5DD1F4AC5D200A7F748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042FB4071F8DF29E0018C25B /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				042FB4091F8DF29E0018C25B /* fishhook.h */,
+				042FB4081F8DF29E0018C25B /* fishhook.c */,
+				042FB40A1F8DF29E0018C25B /* LICENSE */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		0476A4E81F4A92DF00A7F748 = {
+			isa = PBXGroup;
+			children = (
+				0476A4F41F4A92DF00A7F748 /* CPDevTools */,
+				0476A5E11F4AC5D200A7F748 /* CPMonitor */,
+				0476A4F31F4A92DF00A7F748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0476A4F31F4A92DF00A7F748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0476A4F21F4A92DF00A7F748 /* CPDevTools.framework */,
+				0476A5E01F4AC5D200A7F748 /* CPMonitor.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0476A4F41F4A92DF00A7F748 /* CPDevTools */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5151F4A92F800A7F748 /* Tools */,
+				0476A4FD1F4A92F800A7F748 /* Controllers */,
+				0476A52B1F4A92F800A7F748 /* UI */,
+				0476A4F51F4A92DF00A7F748 /* CPDevTools.h */,
+				0476A4F61F4A92DF00A7F748 /* Info.plist */,
+			);
+			path = CPDevTools;
+			sourceTree = "<group>";
+		};
+		0476A4FD1F4A92F800A7F748 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5121F4A92F800A7F748 /* Root */,
+				0476A5031F4A92F800A7F748 /* Http */,
+				0476A4FE1F4A92F800A7F748 /* Crash */,
+				0476A50D1F4A92F800A7F748 /* Performance */,
+				0476A5081F4A92F800A7F748 /* Log */,
+				B8E4615B20EDB3DB003FFD6E /* Test */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0476A4FE1F4A92F800A7F748 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				0476A4FF1F4A92F800A7F748 /* CPCrashInfoListVC.h */,
+				0476A5001F4A92F800A7F748 /* CPCrashInfoListVC.m */,
+				0476A5011F4A92F800A7F748 /* CPCrashInfoVC.h */,
+				0476A5021F4A92F800A7F748 /* CPCrashInfoVC.m */,
+				042FB4031F8DD0A60018C25B /* CPCrashGuardVC.h */,
+				042FB4041F8DD0A60018C25B /* CPCrashGuardVC.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		0476A5031F4A92F800A7F748 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5041F4A92F800A7F748 /* CPHttpInfoListVC.h */,
+				0476A5051F4A92F800A7F748 /* CPHttpInfoListVC.m */,
+				0476A5061F4A92F800A7F748 /* CPHttpInfoVC.h */,
+				0476A5071F4A92F800A7F748 /* CPHttpInfoVC.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		0476A5081F4A92F800A7F748 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0476A50B1F4A92F800A7F748 /* CPLogFileListVC.h */,
+				0476A50C1F4A92F800A7F748 /* CPLogFileListVC.m */,
+				0476A5091F4A92F800A7F748 /* CPLogFileInfoVC.h */,
+				0476A50A1F4A92F800A7F748 /* CPLogFileInfoVC.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		0476A50D1F4A92F800A7F748 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				0476A50E1F4A92F800A7F748 /* CPPerformanceInfoVC.h */,
+				0476A50F1F4A92F800A7F748 /* CPPerformanceInfoVC.m */,
+				0476A5101F4A92F800A7F748 /* CPPerformanceListVC.h */,
+				0476A5111F4A92F800A7F748 /* CPPerformanceListVC.m */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		0476A5121F4A92F800A7F748 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5131F4A92F800A7F748 /* CPMonitorRootVC.h */,
+				0476A5141F4A92F800A7F748 /* CPMonitorRootVC.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		0476A5151F4A92F800A7F748 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5161F4A92F800A7F748 /* Guard */,
+				0476A51B1F4A92F800A7F748 /* Monitor */,
+				0476A5261F4A92F800A7F748 /* Others */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0476A5161F4A92F800A7F748 /* Guard */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5171F4A92F800A7F748 /* CPSafeKVO.h */,
+				0476A5181F4A92F800A7F748 /* CPSafeKVO.m */,
+				0476A5191F4A92F800A7F748 /* CPSafeSelector.h */,
+				0476A51A1F4A92F800A7F748 /* CPSafeSelector.m */,
+			);
+			path = Guard;
+			sourceTree = "<group>";
+		};
+		0476A51B1F4A92F800A7F748 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				0476A51C1F4A92F800A7F748 /* CPCrashMonitor.h */,
+				0476A51D1F4A92F800A7F748 /* CPCrashMonitor.m */,
+				0476A51E1F4A92F800A7F748 /* CPLogMonitor.h */,
+				0476A51F1F4A92F800A7F748 /* CPLogMonitor.m */,
+				0476A5201F4A92F800A7F748 /* CPNetworkMonitor.h */,
+				0476A5211F4A92F800A7F748 /* CPNetworkMonitor.m */,
+				0476A5221F4A92F800A7F748 /* CPRunloopMonitor.h */,
+				0476A5231F4A92F800A7F748 /* CPRunloopMonitor.m */,
+				0476A5241F4A92F800A7F748 /* CPSystemMonitor.h */,
+				0476A5251F4A92F800A7F748 /* CPSystemMonitor.m */,
+				B8E4616420EDB84F003FFD6E /* CPRecordMonitor.h */,
+				B8E4616520EDB84F003FFD6E /* CPRecordMonitor.m */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		0476A5261F4A92F800A7F748 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				042FB4071F8DF29E0018C25B /* fishhook */,
+				0476A5A41F4AB51100A7F748 /* CPDeveToolsDefine.h */,
+				0476A5271F4A92F800A7F748 /* BSBacktraceLogger.h */,
+				0476A5281F4A92F800A7F748 /* BSBacktraceLogger.m */,
+				0476A5291F4A92F800A7F748 /* NSObject+CPSwizzle.h */,
+				0476A52A1F4A92F800A7F748 /* NSObject+CPSwizzle.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		0476A52B1F4A92F800A7F748 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0476A5E11F4AC5D200A7F748 /* CPMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				0476A5E61F4AC61400A7F748 /* CPMonitor.storyboard */,
+				0476A5E21F4AC5D200A7F748 /* Info.plist */,
+			);
+			path = CPMonitor;
+			sourceTree = "<group>";
+		};
+		B8E4615B20EDB3DB003FFD6E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B8E4615C20EDB6E5003FFD6E /* CPTestRecordVC.h */,
+				B8E4615D20EDB6E5003FFD6E /* CPTestRecordVC.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0476A4EF1F4A92DF00A7F748 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0476A5311F4A92F800A7F748 /* CPHttpInfoListVC.h in Headers */,
+				B8E4615E20EDB6E5003FFD6E /* CPTestRecordVC.h in Headers */,
+				0476A53F1F4A92F800A7F748 /* CPSafeKVO.h in Headers */,
+				042FB40C1F8DF29E0018C25B /* fishhook.h in Headers */,
+				0476A5491F4A92F800A7F748 /* CPRunloopMonitor.h in Headers */,
+				0476A52F1F4A92F800A7F748 /* CPCrashInfoVC.h in Headers */,
+				0476A5471F4A92F800A7F748 /* CPNetworkMonitor.h in Headers */,
+				0476A5431F4A92F800A7F748 /* CPCrashMonitor.h in Headers */,
+				042FB4051F8DD0A60018C25B /* CPCrashGuardVC.h in Headers */,
+				B8E4616620EDB84F003FFD6E /* CPRecordMonitor.h in Headers */,
+				0476A52D1F4A92F800A7F748 /* CPCrashInfoListVC.h in Headers */,
+				0476A5451F4A92F800A7F748 /* CPLogMonitor.h in Headers */,
+				0476A54B1F4A92F800A7F748 /* CPSystemMonitor.h in Headers */,
+				0476A53B1F4A92F800A7F748 /* CPPerformanceListVC.h in Headers */,
+				0476A4F71F4A92DF00A7F748 /* CPDevTools.h in Headers */,
+				0476A54F1F4A92F800A7F748 /* NSObject+CPSwizzle.h in Headers */,
+				0476A5331F4A92F800A7F748 /* CPHttpInfoVC.h in Headers */,
+				0476A54D1F4A92F800A7F748 /* BSBacktraceLogger.h in Headers */,
+				0476A5391F4A92F800A7F748 /* CPPerformanceInfoVC.h in Headers */,
+				0476A53D1F4A92F800A7F748 /* CPMonitorRootVC.h in Headers */,
+				0476A5411F4A92F800A7F748 /* CPSafeSelector.h in Headers */,
+				0476A5351F4A92F800A7F748 /* CPLogFileInfoVC.h in Headers */,
+				0476A5371F4A92F800A7F748 /* CPLogFileListVC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0476A4F11F4A92DF00A7F748 /* CPDevTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0476A4FA1F4A92DF00A7F748 /* Build configuration list for PBXNativeTarget "CPDevTools" */;
+			buildPhases = (
+				0476A4ED1F4A92DF00A7F748 /* Sources */,
+				0476A4EE1F4A92DF00A7F748 /* Frameworks */,
+				0476A4EF1F4A92DF00A7F748 /* Headers */,
+				0476A4F01F4A92DF00A7F748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPDevTools;
+			productName = CPDevTools;
+			productReference = 0476A4F21F4A92DF00A7F748 /* CPDevTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0476A5DF1F4AC5D200A7F748 /* CPMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0476A5E51F4AC5D200A7F748 /* Build configuration list for PBXNativeTarget "CPMonitor" */;
+			buildPhases = (
+				0476A5DC1F4AC5D200A7F748 /* Sources */,
+				0476A5DD1F4AC5D200A7F748 /* Frameworks */,
+				0476A5DE1F4AC5D200A7F748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPMonitor;
+			productName = CPMonitor;
+			productReference = 0476A5E01F4AC5D200A7F748 /* CPMonitor.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0476A4E91F4A92DF00A7F748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = cinvoke;
+				TargetAttributes = {
+					0476A4F11F4A92DF00A7F748 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					0476A5DF1F4AC5D200A7F748 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0476A4EC1F4A92DF00A7F748 /* Build configuration list for PBXProject "CPDevTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0476A4E81F4A92DF00A7F748;
+			productRefGroup = 0476A4F31F4A92DF00A7F748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0476A4F11F4A92DF00A7F748 /* CPDevTools */,
+				0476A5DF1F4AC5D200A7F748 /* CPMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0476A4F01F4A92DF00A7F748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042FB40D1F8DF29E0018C25B /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0476A5DE1F4AC5D200A7F748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0476A5E71F4AC61400A7F748 /* CPMonitor.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0476A4ED1F4A92DF00A7F748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0476A52E1F4A92F800A7F748 /* CPCrashInfoListVC.m in Sources */,
+				0476A5361F4A92F800A7F748 /* CPLogFileInfoVC.m in Sources */,
+				0476A5461F4A92F800A7F748 /* CPLogMonitor.m in Sources */,
+				0476A53C1F4A92F800A7F748 /* CPPerformanceListVC.m in Sources */,
+				0476A5441F4A92F800A7F748 /* CPCrashMonitor.m in Sources */,
+				0476A5341F4A92F800A7F748 /* CPHttpInfoVC.m in Sources */,
+				042FB40B1F8DF29E0018C25B /* fishhook.c in Sources */,
+				0476A5301F4A92F800A7F748 /* CPCrashInfoVC.m in Sources */,
+				0476A5381F4A92F800A7F748 /* CPLogFileListVC.m in Sources */,
+				0476A54E1F4A92F800A7F748 /* BSBacktraceLogger.m in Sources */,
+				0476A5501F4A92F800A7F748 /* NSObject+CPSwizzle.m in Sources */,
+				0476A53E1F4A92F800A7F748 /* CPMonitorRootVC.m in Sources */,
+				B8E4616720EDB84F003FFD6E /* CPRecordMonitor.m in Sources */,
+				B8E4615F20EDB6E5003FFD6E /* CPTestRecordVC.m in Sources */,
+				0476A53A1F4A92F800A7F748 /* CPPerformanceInfoVC.m in Sources */,
+				0476A5481F4A92F800A7F748 /* CPNetworkMonitor.m in Sources */,
+				042FB4061F8DD0A60018C25B /* CPCrashGuardVC.m in Sources */,
+				0476A5401F4A92F800A7F748 /* CPSafeKVO.m in Sources */,
+				0476A54C1F4A92F800A7F748 /* CPSystemMonitor.m in Sources */,
+				0476A5321F4A92F800A7F748 /* CPHttpInfoListVC.m in Sources */,
+				0476A54A1F4A92F800A7F748 /* CPRunloopMonitor.m in Sources */,
+				0476A5421F4A92F800A7F748 /* CPSafeSelector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0476A5DC1F4AC5D200A7F748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0476A4F81F4A92DF00A7F748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0476A4F91F4A92DF00A7F748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0476A4FB1F4A92DF00A7F748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CPDevTools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = me.cinvoke.CPDevTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0476A4FC1F4A92DF00A7F748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CPDevTools/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = me.cinvoke.CPDevTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0476A5E31F4AC5D200A7F748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CPMonitor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = me.cinvoke.CPMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0476A5E41F4AC5D200A7F748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = CPMonitor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = me.cinvoke.CPMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0476A4EC1F4A92DF00A7F748 /* Build configuration list for PBXProject "CPDevTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0476A4F81F4A92DF00A7F748 /* Debug */,
+				0476A4F91F4A92DF00A7F748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0476A4FA1F4A92DF00A7F748 /* Build configuration list for PBXNativeTarget "CPDevTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0476A4FB1F4A92DF00A7F748 /* Debug */,
+				0476A4FC1F4A92DF00A7F748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0476A5E51F4AC5D200A7F748 /* Build configuration list for PBXNativeTarget "CPMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0476A5E31F4AC5D200A7F748 /* Debug */,
+				0476A5E41F4AC5D200A7F748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0476A4E91F4A92DF00A7F748 /* Project object */;
+}
